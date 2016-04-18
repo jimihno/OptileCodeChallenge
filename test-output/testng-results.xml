@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="39222" started-at="2016-04-18T09:15:06Z" finished-at="2016-04-18T09:15:46Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="39222" started-at="2016-04-18T09:15:06Z" finished-at="2016-04-18T09:15:46Z">
+      <class name="com.dropbox.CompleteTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dropbox.CompleteTest@5f9edf14]" name="beforeMethod" is-config="true" duration-ms="13863" started-at="2016-04-18T12:15:06Z" finished-at="2016-04-18T12:15:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="mainUpload()[pri:1, instance:com.dropbox.CompleteTest@5f9edf14]" name="mainUpload" duration-ms="11515" started-at="2016-04-18T12:15:20Z" finished-at="2016-04-18T12:15:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainUpload -->
+        <test-method status="PASS" signature="mainFolderCreation()[pri:2, instance:com.dropbox.CompleteTest@5f9edf14]" name="mainFolderCreation" duration-ms="5206" started-at="2016-04-18T12:15:32Z" depends-on-methods="com.dropbox.CompleteTest.mainUpload" finished-at="2016-04-18T12:15:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainFolderCreation -->
+        <test-method status="PASS" signature="mainFolderDeletion()[pri:3, instance:com.dropbox.CompleteTest@5f9edf14]" name="mainFolderDeletion" duration-ms="2589" started-at="2016-04-18T12:15:37Z" depends-on-methods="com.dropbox.CompleteTest.mainFolderCreation" finished-at="2016-04-18T12:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainFolderDeletion -->
+        <test-method status="PASS" signature="mainShowHideDeleted()[pri:4, instance:com.dropbox.CompleteTest@5f9edf14]" name="mainShowHideDeleted" duration-ms="5346" started-at="2016-04-18T12:15:40Z" depends-on-methods="com.dropbox.CompleteTest.mainFolderDeletion" finished-at="2016-04-18T12:15:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainShowHideDeleted -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dropbox.CompleteTest@5f9edf14]" name="afterMethod" is-config="true" duration-ms="653" started-at="2016-04-18T12:15:45Z" finished-at="2016-04-18T12:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dropbox.CompleteTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,25 @@
+Description:
+Maven project developed in Eclipse IDE in Java using Selenium Webdriver and TestNG tools.
+All test scenarios were executed in Firefox browser.
+In order to create and organize the Selenium project, 2 automation framework creation 
+techniques were used: Page Object Model and Page Object Factory.
+Project was splited in 3 levels of test classes in order to reuse existing functionality. 
+CompleteTest.java file located in src/test/java/com/dropbox/ contains 
+the actual test steps and provides high level description of test cases.
+Those test steps call functions of classes at the second level located 
+at src/main/java/com/dropbox/appModules/ , which in his turn calls 
+functions of classes at the third level, the page object level.
+The third level, which located at src/main/java/com/dropbox/pageObjects/ , 
+provides page specific classes one for each page at www.dropbox.com 
+
+Project import and execution:
+First step is importing the existing maven project into the workspace.
+Maven will import for you all project's dependencies.
+Modify username, password values at Dropbox.properties to your Dropbox credentials 
+and uploadFilename to the location of the file you want to upload.
+Last step is to run as TestNg suite testng.xml located in src/test/resources/
+or run as TestNg test CompleteTest.java located in src/test/java/com/dropbox/
+and you can see the tests run live in your FF browser.
+
+Miscellaneous
+Successfully executed test reports can be found at /test-output/index.html
